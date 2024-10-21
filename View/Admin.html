@@ -1,0 +1,208 @@
+<html>
+<style>
+    
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    background-color: antiquewhite;
+    font-size: 30px;
+    font-family: monospace;
+    padding-left: 260px; /* Desplazamiento para dejar espacio al sidebar */
+    padding-top: 20px;
+    min-height: 100vh;
+}
+/* Estilos generales para la tabla */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+   margin-left: 300px;
+}
+
+/* Estilo para el encabezado de la tabla */
+table th {
+    background-color: blue;
+    color: white;
+    padding: 12px 15px;
+}
+
+/* Estilo para las celdas de la tabla */
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Colores alternos para las filas */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover sobre las filas */
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para la primera columna */
+table td:first-child {
+    font-weight: bold;
+}
+
+/* Bordes alrededor de toda la tabla */
+table, th, td {
+    border: 1px solid #ddd;
+}
+/* Estilo para el sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.sidebar a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.sidebar header {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    margin-left: 250px; /* Ajuste del contenido principal para evitar superposición con el sidebar */
+}
+/* Estilo general del contenedor para centrar el formulario */
+form {
+    width: 300px; /* Ancho del formulario */
+    margin: 50px auto; /* Centra el formulario vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los campos de texto */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no expanda el ancho */
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efecto hover para el botón */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para las etiquetas de texto */
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Espaciado entre los campos */
+form br {
+    margin-bottom: 15px;
+}
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 300px;
+    display: inline-block; /* Permite que las tarjetas se alineen horizontalmente */
+    vertical-align: top; /* Alineación vertical */
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: darkblue;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.card img {
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+<div class="sidebar">
+    <header>Menú</header>
+    <a href="admin_dashboard.php">Home</a>
+    <a href="read.php">Usuarios</a>
+    <a href="create.php">Crear usuario</a>
+    <a href="mostrar_candidato.php">Candidatos</a>
+    <a href="insertar_candidato.php">Crear candidato</a>
+    <a href="Actualizar_candidato.php">Editar candidato</a>
+    <a href="borrar_candidato.php">Borrar candidato</a>
+    <a href="conteo.php">Ver conteo</a>
+    <a href="logout.php">Cerrar sesión</a>
+</div>
+</html>
